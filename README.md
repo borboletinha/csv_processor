@@ -48,7 +48,7 @@ customer,item,total,quantity,date
 ```
 
 ### Project structure
-
+```
 ├── deals     ...
 │ ├── deals_core  
 │ │ ├── settings.py  
@@ -69,15 +69,15 @@ customer,item,total,quantity,date
 ├── manage.py  
 ├── README.md  
 └── requirements.txt
-
+```
 
 ### URL structure
-
+```
 ├── api/  
 │ ├── upload-file/  
 │ ├── get-processed-data/  
 └── admin/
-
+```
 ## Installation
 
 ### Docker-compose deploy
