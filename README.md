@@ -53,7 +53,9 @@ customer,item,total,quantity,date
 │ ├── deals_core  
 │ │ ├── settings.py  
 │ │ ├── urls.py  
-│ │ └── wsgi.py  
+│ │ └── wsgi.py
+│ ├── migrations  
+│ │ └── 0001_initial.py   
 │ ├── admin.py  
 │ ├── api_urls.py  
 │ ├── apps.py  
