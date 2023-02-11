@@ -44,13 +44,12 @@ customer,item,total,quantity,date
             "Quartz"
         ]
     },
-   ...
 ]
 ```
 
 ### Project structure
 
-├── deals  
+├── deals     ...
 │ ├── deals_core  
 │ │ ├── settings.py  
 │ │ ├── urls.py  
