@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["./deals/scripts/docker-entrypoint.sh"]
+ENTRYPOINT ["./scripts/docker-entrypoint.sh"]
