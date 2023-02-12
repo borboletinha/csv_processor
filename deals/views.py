@@ -1,11 +1,8 @@
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.response import Response
-import logging
 
 from deals.serializers import FileSerializer, DealSerializer
 from deals.utils import export_deals_in_db, handle_data_queryset
-
-logging.basicConfig(level=logging.INFO)
 
 
 class DealView(GenericViewSet):

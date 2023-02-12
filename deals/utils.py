@@ -1,4 +1,3 @@
-import logging
 from io import BytesIO, TextIOWrapper
 from datetime import datetime
 from itertools import chain
@@ -7,8 +6,6 @@ from django.db.models import F, Sum
 from django_mysql.models import GroupConcat
 
 from deals.models import Deal
-
-logging.basicConfig(level=logging.INFO)
 
 
 def export_deals_in_db(file):
