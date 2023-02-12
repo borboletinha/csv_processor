@@ -54,6 +54,7 @@ customer,item,total,quantity,date
 ```
 ├── deals
 │ ├── deals_core
+│ │ ├── .env
 │ │ ├── settings.py  
 │ │ ├── urls.py  
 │ │ └── wsgi.py
