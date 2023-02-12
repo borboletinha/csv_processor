@@ -75,6 +75,7 @@ customer,item,total,quantity,date
 ├── manage.py  
 ├── README.md  
 ├── requirements.txt
+├── db.sqlite3                            # prepopulated database
 └── deals.csv                             # example csv-file
 ```
 

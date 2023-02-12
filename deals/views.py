@@ -29,4 +29,4 @@ class DealView(GenericViewSet):
 
     def list(self, request, *args, **kwargs):
         serializer = self.get_serializer(self.queryset, many=True)
-        return Response({'response': serializer.data})
+        return Response(serializer.data)
