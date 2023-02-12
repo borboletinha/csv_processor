@@ -5,6 +5,7 @@
    - [Principle of operation](#principle-of-operation)
    - [Project structure](#project-structure)
    - [URL structure](#url-structure)
+   - [Tests absence](#tests-absence)
 2. [Installation](#installation)
    - [Docker-compose deploy](#docker-compose-deploy)
 
@@ -31,26 +32,28 @@ customer,item,total,quantity,date
     * ```username``` - customer login; 
     * ```spent_money``` - the amount of funds spent by the customer for the entire period;
     * ```gems``` - a list of gemstones that have been bought by at least two of these five customers, and this customer is one of the customers.
-   
-   
+
+
 * The example output:
 ```json
-[
+{
+  "response": [
     {
-        "username": "example_username",
-        "spent_money": 10000,
-        "gems": [
-            "Opal",
-            "Quartz"
-        ]
-    },
-]
+      "username": "example_username",
+      "spent_money": 10000,
+      "gems": [
+        "Opal",
+        "Quartz"
+      ]
+    }
+  ]
+}
 ```
 
 ### Project structure
 ```
-├── deals     ...
-│ ├── deals_core  
+├── deals
+│ ├── deals_core
 │ │ ├── settings.py  
 │ │ ├── urls.py  
 │ │ └── wsgi.py
@@ -70,16 +73,22 @@ customer,item,total,quantity,date
 ├── Dockerfile  
 ├── manage.py  
 ├── README.md  
-└── requirements.txt
+├── requirements.txt
+└── deals.csv                             # example csv-file
 ```
 
 ### URL structure
 ```
 ├── api/  
 │ ├── upload-file/  
-│ ├── get-processed-data/  
+│ └── get-processed-data/  
 └── admin/
 ```
+
+### Tests absence
+
+Please note that there are no tests in this project, since their writing was not included in the Scope of Work.
+
 ## Installation
 
 ### Docker-compose deploy
