@@ -13,13 +13,12 @@ def export_deals_in_db(file):
     reader = TextIOWrapper(file, encoding='utf-8').readlines()[1:]
     for row in reader:
         row = row.rstrip().split(',')
-        deal, created = Deal.objects.get_or_create(
+        deal, _ = Deal.objects.get_or_create(
             customer=row[0],
             item=row[1],
             price=int(row[2]),
             quantity=int(row[3]),
             deal_date=datetime.strptime(row[4], '%Y-%m-%d %H:%M:%S.%f'))
-        deal.save()
 
 
 def handle_data_queryset():
